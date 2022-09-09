@@ -7,8 +7,7 @@
  */
 int main(void)
 {
-	char gift;
-	
+	char gift;	
 	for (gift = 'a'; gift <= 'z'; gift++)
 		putchar(gift);
 	putchar('\n');
