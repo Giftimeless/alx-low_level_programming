@@ -9,17 +9,26 @@
  */
 int main(void)
 {
-	int d;
+	int i,a,b;
+	i=0;
 
-	for (d = 0; d < 90; d++)
+	while (i < 99)
 	{
-		putchar ((d / 10) + '0');
-		putchar ((d % 10) + '0');
-		if (d != 89)
+		a=i/10;
+		b=i%10;
+		if(a >= b)
 		{
-			putchar (',');
-			putchar (' ');
+			i++;
+			continue;
 		}
+		putchar(a + '0');
+		putchar(b + '0');
+		if (i != 89)
+		{
+			putchar(',');
+		}
+		i++;
+		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
