@@ -2,7 +2,7 @@
 
 /**
  * main - print alphabet x10
- *
+ * Description: Print alphabet by x10
  * Return: void
  */
 void print_alphabet_x10(void)
