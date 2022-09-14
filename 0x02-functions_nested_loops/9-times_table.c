@@ -15,7 +15,6 @@ void times_table(void)
 		_putchar('0');
 		_putchar(',');
 		_putchar(' ');
-		
 		for (cone = 1; cone <= 9; cone++)
 		{
 			d = (rone * cone);
