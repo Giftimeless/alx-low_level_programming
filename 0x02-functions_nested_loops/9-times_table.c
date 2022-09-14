@@ -6,7 +6,7 @@
  * Return: times table
  * add extra space past single digit
  */
-void time_table(void)
+void times_table(void)
 {
 	for (rone = 0; rone <= 9; rone++)
 	{
