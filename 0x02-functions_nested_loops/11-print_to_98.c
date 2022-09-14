@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 /**
  * print_to_98 - function that prints all naturalbnumbers from n to 98
  * user input's nimber prints to 98, regardless < 98 or > 98
