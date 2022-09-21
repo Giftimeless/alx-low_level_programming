@@ -1,24 +1,29 @@
 #include "main.h"
 
 /**
- * _strncpy
+ * _strncpy - copy string
  * @dest: Destination string
  * @src: String to be added
  * @n: Array index restriction
- * Return: Always 0
+ * Return: pointer to destination string
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int j;
+	int i;
 
-	for (j = 0; j < n && src[j] != '\0'; j++)
-		dest[j] = src[j];
-
-	while (j != n)
+	i = 0;
+	while (i < n && src[i] != '\0')
 	{
-		dest[j] = '\0';
-		j++;
+		dest[i] = src[i];
+		i++;
+	}
+
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
 	}
 
 	return (dest);
+
 }
