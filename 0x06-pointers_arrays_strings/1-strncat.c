@@ -1,24 +1,25 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _strncat - check code
+ * _strncat - function that concatenates strings
  * @dest: Destination string
  * @src: String to be added
  * @n: Array block
- * Return: Always 0
+ * Return: pointer to destination string
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, j;
+	int length, j;
 
-	for (i = 0; dest[i] != '\0'; i++)
-		;
-
-	for (j = 0; j < n; j++, i++)
+	length = 0;
+	while (dest[length] != '\0')
 	{
-		dest[i] = src[j];
+		length++;
 	}
-
+	for (j = 0; j < n && src[j] != '\0'; j++, length++)
+	{
+		dest[length] = src[j];
+	}
+	dest[length] = '\0';
 	return (dest);
 }
