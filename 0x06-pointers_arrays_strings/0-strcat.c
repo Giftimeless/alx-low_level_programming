@@ -4,7 +4,7 @@
  * _strcat - check code
  * @dest: Destination string
  * @src: String for adding
- * Return: Always 0
+ * Return: pointer to destination string
  */
 char *_strcat(char *dest, char *src)
 {
