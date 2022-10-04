@@ -3,13 +3,13 @@
 #include <stdio.h>
 /**
  * create_array - create an array of char dynamically
- * @buffer: memory address to print
  * @size: size of memory to print
  * @c: the string
  * Return: 0 Successs except otherwise defined
  */
 char *create_array(unsigned int size, char c)
 {
+	char *buffer;
 	unsigned int position;
 
 	if (size == 0)
@@ -18,7 +18,7 @@ char *create_array(unsigned int size, char c)
 	}
 
 	/*Define values using malloc*/
-	char *buffer = (char*)malloc(size * sizeof(c));
+	*buffer = (char *)malloc(size * sizeof(c));
 	if (buffer == 0)
 	{
 		return (NULL);
