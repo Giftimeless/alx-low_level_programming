@@ -18,7 +18,7 @@ int _atoi_digit(char x)
 }
 
 /**
- * _isNuumber - Define if a string is a number
+ * _isNumber - Define if a string is a number
  * @argv: Pointer to string
  * Return: 0 Success
  */
@@ -35,7 +35,7 @@ int _isNumber(char *argv)
 /**
  * _calloc - allocate array
  * @nmemb: number of elements
- * @size: size 
+ * @size: size
  * Return: Pointer to array
  */
 
@@ -59,13 +59,13 @@ void *_calloc(unsigned int nmemb, unsigned int size)
  * mul_array - multiply 2 arrays
  * @a1: array 1
  * @len1: length of a1
- * a2: char
+ * @a2: char
  * @a3: array for result
  * @lena: length of a3
  * Return: pointer to array
  */
 
-voi *mul_array(char *a1, int len1, char a2, char *a3, int lena)
+void *mul_array(char *a1, int len1, char a2, char *a3, int lena)
 {
 	int mul = 0, i, k;
 
@@ -112,7 +112,7 @@ void print_array(char *a, int nb)
  * main - print the multiplication of 2 numbers
  * @argc: array length
  * @argv: array
- * Return: o Success
+ * Return: 0 Success
  */
 
 int main(int argc, char *argv[])
@@ -121,7 +121,7 @@ int main(int argc, char *argv[])
 	char E[6] = {'E', 'r', 'r', 'o', 'r', '\n'};
 	char *tabres;
 
-	if (argc != 3 || _isNumber(argv[1]) == 1 || isNumber(argv[2]) == 1)
+	if (argc != 3 || _isNumber(argv[1]) == 1 || _isNumber(argv[2]) == 1)
 	{
 		for (i = 0; i < 6; i++)
 		{
