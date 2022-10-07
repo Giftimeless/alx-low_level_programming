@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include "main.h"
-#include <stdio.h>
 /**
  * create_array - create an array of char dynamically
  * @size: size of memory to print
@@ -17,8 +16,9 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 
-	/*Define values using malloc*/
-	*buffer = (char *)malloc(size * sizeof(c));
+	/*Define values with malloc*/
+	buffer = (char *) malloc(size * sizeof(c));
+
 	if (buffer == 0)
 	{
 		return (NULL);
@@ -31,6 +31,7 @@ char *create_array(unsigned int size, char c)
 			*(buffer + position) = c;
 			position++;
 		}
+
 		return (buffer);
 	}
 }
