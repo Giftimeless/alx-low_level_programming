@@ -1,11 +1,13 @@
-#include <stdio.h>
 #include "dog.h"
+#include <stdio.h>
 
 /**
  * print_dog - prints struct dog
  * @d: pointer to struct type dog
+ *
  * Return: no return
  */
+
 void print_dog(struct dog *d)
 {
 	if (d)
@@ -15,7 +17,7 @@ void print_dog(struct dog *d)
 		else
 			printf("Name: %s\n", d->name);
 
-		printf("Age : %f\n",  d->age);
+		printf("Age: %f\n",  d->age);
 
 		if (!(d->owner))
 			printf("Owner: (nil)\n");
